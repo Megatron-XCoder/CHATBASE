@@ -97,7 +97,7 @@ const server = app.listen(3300, () =>
 
 const io = socket(server, {
   cors: {
-    origin: "*", // Allow all origins (any port)
+    origin: "chatbase-three.vercel.app", // Allow all origins (any port)
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow all common HTTP methods
   },
 });
